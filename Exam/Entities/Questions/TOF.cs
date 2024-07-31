@@ -30,7 +30,7 @@
 
             do
                 Console.WriteLine("What is the right answer id? (1 for true | 2 for false)");
-            while (!int.TryParse(Console.ReadLine(), out id));
+            while (!int.TryParse(Console.ReadLine(), out id) || id > 2);
             RightAnswerId = id;
 
             return this;

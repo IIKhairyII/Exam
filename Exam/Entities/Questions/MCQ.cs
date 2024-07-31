@@ -28,7 +28,7 @@
 
             do
                 Console.WriteLine("What is the right answer id?");
-            while (!int.TryParse(Console.ReadLine(), out id));
+            while ((!int.TryParse(Console.ReadLine(), out id)) || id > AnswerList?.Length);
             RightAnswerId = id;
 
             return this;
